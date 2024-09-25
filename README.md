@@ -14,7 +14,8 @@ yarn install
 ```
 
 > [!IMPORTANT]
-> Add your [NewsAPI key](https://newsapi.org/account) `.env.local` to `apps/next` folder
+> Add your [NewsAPI key](https://newsapi.org/account) `.env.local` to `apps/next` folder:
+> `NEXT_PUBLIC_NEWS_API_KEY=YOUR_NEWS_API_KEY`
 > (or just add it to `packages/ui/src/constants/constants.ts`):
 > `export const NEWS_API_KEY="YOUR_NEWS_API_KEY"`
 

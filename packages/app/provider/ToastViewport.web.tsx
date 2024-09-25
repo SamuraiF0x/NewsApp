@@ -1,5 +1,6 @@
-import { ToastViewport as ToastViewportOg } from "@my/ui";
+import { ToastViewport as ToastViewportOg, useMedia } from "@my/ui";
 
 export const ToastViewport = () => {
-  return <ToastViewportOg right="$8" bottom="$8" />;
+  const { md } = useMedia();
+  return <ToastViewportOg right={md ? "$3" : "$8"} bottom={md ? "$3" : "$8"} />;
 };
