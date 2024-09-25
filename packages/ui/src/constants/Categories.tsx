@@ -23,9 +23,6 @@ const DefaultCategory = (category) => {
   return { name: category, icon: Newspaper, color: CategoryColors.Color };
 };
 
-// export const findCategory = (category: CategoryEnum | string) =>
-//      Categories.find((item) => item.name.toLowerCase() === category.toLowerCase())!
-
 export const findCategory = (category: CategoryEnum | string) => {
   const foundCategory = Categories.find(
     (item) => item.name.toLowerCase() === category.toLowerCase()
